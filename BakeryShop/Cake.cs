@@ -8,12 +8,11 @@ namespace BakeryShop
 {
     public abstract class Cake
     {
-        private string name;
-
-        public string Name { get => name; protected set => name = value; }
+       
+        public string Name { get => Name; protected set => Name = value; }
         public string Taste { get;}
         public bool Gluten { get;}
-        public double Price { get; set;}
+        public double Price { get => Price; protected set => Price = value;}
 
 
         public abstract double CalculateCost();
