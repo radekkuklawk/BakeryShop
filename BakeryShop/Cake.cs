@@ -14,6 +14,14 @@ namespace BakeryShop
         public bool Gluten { get;}
         public double Price { get => Price; protected set => Price = value;}
 
+        public Cake (string name, string taste, bool gluten, double Price)
+        {
+            this.Name = name;
+            this.Taste = taste;
+            this.Gluten = gluten;
+            this.Price = Price;
+        }
+
 
         public abstract double CalculateCost();
 
