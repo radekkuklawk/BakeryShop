@@ -9,17 +9,20 @@ namespace BakeryShop
     public abstract class Cake
     {
        
-        public string Name { get => Name; protected set => Name = value; }
-        public string Taste { get;}
-        public bool Gluten { get;}
-        public double Price { get => Price; protected set => Price = value;}
+        public string Name { get ; set;}
+        public string Taste { get; set;}
+        public bool Gluten { get; set;}
+        public double Price { get; set;}
 
-        public Cake (string name, string taste, bool gluten, double Price)
+        public Cake()
+        { }
+
+        public Cake (string name, string taste, bool gluten, double price)
         {
             this.Name = name;
             this.Taste = taste;
             this.Gluten = gluten;
-            this.Price = Price;
+            this.Price = price;
         }
 
 

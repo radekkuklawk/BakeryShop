@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BakeryShop
 {
-    class Biscuit : Cake
+    class Muffin : Cake
     {
-        public Biscuit() : base()
+        public Muffin() : base()
         {
 
         }
-        public Biscuit(string name, string taste, bool gluten, double price) : base (name, taste, gluten, price)
+        public Muffin(string name, string taste, bool gluten, double price) : base(name, taste, gluten, price)
         {
 
         }
@@ -25,6 +25,5 @@ namespace BakeryShop
         {
             return this.Name;
         }
-
     }
 }
