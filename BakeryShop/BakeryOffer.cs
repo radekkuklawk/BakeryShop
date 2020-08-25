@@ -18,7 +18,7 @@ namespace BakeryShop
         }
         public void Run()
         {
-           
+
             Cake biscuit;
             Cake muffin;
 
@@ -37,7 +37,7 @@ namespace BakeryShop
             Console.ReadKey();
 
             biscuit = CreateVanillaDecorator(biscuit);
-            muffin =CreateVanillaDecorator(muffin);
+            muffin = CreateVanillaDecorator(muffin);
             _printer.Print(biscuit);
             _printer.Print(muffin);
             Console.ReadKey();
@@ -46,14 +46,14 @@ namespace BakeryShop
         }
         private void Menu()
         {
-           
+
             Console.WriteLine("1 - Biscuit");
             Console.WriteLine("2 - Muffin");
-            Console.ReadKey();         
+            Console.ReadKey();
         }
 
 
-     
+
         private Biscuit CreateNewBiscuit()
         {
             return new Biscuit();
@@ -61,20 +61,21 @@ namespace BakeryShop
 
         private Muffin CreateNewMuffin()
         {
-           return new Muffin();
-          
+            return new Muffin();
+
         }
 
         private ChocoladeDecorator CreateChocoDecorator(Cake cake)
         {
             CreatedChoco();
-            return new ChocoladeDecorator(cake);      
+            return new ChocoladeDecorator(cake);
         }
 
         private VanillaDecorator CreateVanillaDecorator(Cake cake)
         {
             CreatedVanilla();
-            return new VanillaDecorator(cake);          
+            return new VanillaDecorator(cake);
         }
+
     }
-}
+}       
