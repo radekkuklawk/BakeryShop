@@ -8,10 +8,11 @@ namespace BakeryShop
 {
     class VanillaDecorator : CakeDecorator
     {
-        public VanillaDecorator(string name, string taste, bool gluten, double price) : base(name, taste, gluten, price)
+        public VanillaDecorator(Cake cake) : base(cake)
         {
 
         }
+
         public override double CalculateCost()
         {
             return base.CalculateCost() + 2.15;

@@ -8,22 +8,15 @@ namespace BakeryShop
 {
     class Biscuit : Cake
     {
-        public Biscuit() : base()
-        {
-
-        }
-        public Biscuit(string name, string taste, bool gluten, double price) : base (name, taste, gluten, price)
-        {
-
-        }
+       
         public override double CalculateCost()
         {
-            return this.Price;
+            return 25.00;
         }
 
         public override string GetName()
         {
-            return this.Name;
+            return "biscuit";
         }
 
     }

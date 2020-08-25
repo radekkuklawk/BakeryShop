@@ -48,7 +48,9 @@
     <Compile Include="Biscuit.cs" />
     <Compile Include="CakeDecorator.cs" />
     <Compile Include="ChocoladeDecorator.cs" />
+    <Compile Include="IPrint.cs" />
     <Compile Include="Muffin.cs" />
+    <Compile Include="Printer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VanillaDecorator.cs" />

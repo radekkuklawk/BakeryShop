@@ -8,19 +8,21 @@ namespace BakeryShop
 {
     public class CakeDecorator : Cake
     {
-        
-        public CakeDecorator(string name, string taste, bool gluten, double price) : base(name, taste, gluten, price)
-        {
+        protected Cake _cake;
 
-        }      
+        public CakeDecorator(Cake cake)
+        {
+            _cake = cake;
+        }
+      
         public override double CalculateCost()
         {
-            return this.CalculateCost();
+            return _cake.CalculateCost();
         }
 
         public override string GetName()
         {
-            return this.GetName();
+            return _cake.GetName();
         }
     }
 }

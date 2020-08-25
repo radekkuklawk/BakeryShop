@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace BakeryShop
 {
-    public abstract class Cake
+    interface IPrint
     {
-
-        public abstract double CalculateCost();
-
-        public abstract string GetName();
-    
-
+        void Print(Cake cake);
     }
 }

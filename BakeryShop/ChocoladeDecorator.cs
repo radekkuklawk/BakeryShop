@@ -8,7 +8,7 @@ namespace BakeryShop
 {
     class ChocoladeDecorator : CakeDecorator
     {
-        public ChocoladeDecorator(string name, string taste, bool gluten, double price) : base(name, taste, gluten, price)
+        public ChocoladeDecorator(Cake cake) : base(cake)
         {
 
         }
