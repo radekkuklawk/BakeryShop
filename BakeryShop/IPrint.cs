@@ -8,6 +8,6 @@ namespace BakeryShop
 {
     interface IPrint
     {
-        void Print(Cake cake);
+        void Print(Cake cake);     
     }
 }

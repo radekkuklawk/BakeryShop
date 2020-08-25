@@ -11,7 +11,8 @@ namespace BakeryShop
     {
         static void Main(string[] args)
         {
-            
+            BakeryOffer bakeryoffer = new BakeryOffer();
+            bakeryoffer.Run();
     
 
 

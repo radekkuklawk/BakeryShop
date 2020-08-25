@@ -10,12 +10,12 @@ namespace BakeryShop
     {
         public void Print(Cake cake)
         {
-            Console.WriteLine($"Nazwa: {cake.Name}");
-            Console.WriteLine($"Smak: {cake.Taste}");
-            Console.WriteLine($"Czy zawiera Gluten: {cake.Gluten}");
-            Console.WriteLine($"Cena:{cake.Price}");
-            
-            Console.WriteLine();
+            Console.WriteLine("{0:C2}", cake.CalculateCost());
+            Console.WriteLine(cake.GetName());
+
         }
+
+
+
     }
 }
